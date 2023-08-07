@@ -8,7 +8,7 @@ import zipfile
 def download(output_dir):
     for i in range(10):
         filename = 'part{}.zip'.format(i + 1)
-        url = r'http://www.cs.ucf.edu/~aroshan/index_files/Dataset_PitOrlManh/zipped images/' + filename
+        url = r'https://drive.google.com/drive/my-drive' + filename
         print('Downloading', url)
         filepath = wget.download(url, out=os.path.join(output_dir))
 
